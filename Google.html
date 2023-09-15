@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Search</title>
+    <style>
+        
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+.search-container {
+    text-align: center;
+    padding: 50px ;
+}
+
+.h1 {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.search-input {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.search-button {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.feeling-lucky-button {
+    color: #4285f4;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.advanced-search {
+    margin-top: 20px;
+}
+.advanced-search label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Google Search</a></li>
+                <li><a href="image.html">Image Search</a></li>
+                <li><a href="advanced.html">Advanced Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="search-container">
+            <h1 id="logo" style="letter-spacing: 0px">
+                <span style="color: #4285f4;">G</span>
+                <span style="color: #0F9D58;">o</span>
+                <span style="color: #F4B400;">o</span>
+                <span style="color: #DB4437;">g</span>
+                <span style="color: #4285f4;">l</span>
+                <span style="color: #0F9D58;">e</span>
+            </h1>
+            <form action="https://www.google.com/search">
+                <input type="text" name="q" class="search-input" placeholder="Search Google or type a URL">
+                <div class="buttons">
+                    <input type="submit" value="Google Search" class="search-button">
+                    <a href="https://www.google.com/search?q=I'm%20Feeling%20Lucky" class="feeling-lucky-button">I'm Feeling Lucky</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
